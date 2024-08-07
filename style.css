@@ -45,10 +45,7 @@ main{
 label , button{
     display: block;
 }
-.form{
-    width: 40%;
-}
-.message{
+.form , .message{
     width: 40%;
 }
 .message h1{
@@ -73,10 +70,41 @@ textarea{
 button{
     background: #ff4032;
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 input , textarea{
     background: rgba(255, 255, 255, 0.2);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    .email-phone{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin: 10px;
+    }
+    main{
+        margin: 150px auto ;
+        flex-direction: column;
+    }
+    .form , .message{
+        width: 80%;
+        margin: auto;
+    }
+    .message{
+        order: 1;
+        margin-bottom: 40px;
+    }
+    .form{
+        order: 2;
+    }
+    .message p{
+    display: none;
+    }
 }
