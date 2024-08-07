@@ -30,14 +30,17 @@ header h1::first-letter{
     color: black;
     font-size: 45px;
 }
-
 .email-phone{
     display: flex;
     gap: 25px;
 }
+
+.twitter i:hover{
+    color:black
+}
 main{
     width: 88%;
-    margin: 200px auto ;
+    margin: 200px auto 0px ;
     display: flex;
     justify-content: space-around;
     padding-bottom: 80px;
@@ -90,7 +93,7 @@ input , textarea{
         margin: 10px;
     }
     main{
-        margin: 150px auto ;
+        margin: 100px auto 0;
         flex-direction: column;
     }
     .form , .message{
@@ -108,3 +111,4 @@ input , textarea{
     display: none;
     }
 }
+
